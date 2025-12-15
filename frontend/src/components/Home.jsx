@@ -76,7 +76,7 @@
 //       .catch((err) => console.error("Error fetching posts:", err));
 //   }, []);
 
-  
+
 
 //   return (
 //     <section className="w-full relative bg-[#FDF2D2] overflow-x-hidden">
@@ -295,7 +295,7 @@ const Home = () => {
   // const [showMore, setShowMore] = useState(false);
 
   const prevSlide = () =>
-  setCurrent((prev) => (prev - 1 + images.length) % images.length);
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
 
 
   const nextSlide = () => setCurrent((prev) => (prev + 1) % images.length);
@@ -306,24 +306,24 @@ const Home = () => {
 
       {/* Hero Carousel */}
       <div className="relative w-full h-[45vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
-       <img src={images[current]} alt="slide" className="w-full h-full object-cover transition duration-700" />
+        <img src={images[current]} alt="slide" className="w-full h-full object-cover transition duration-700" />
 
 
         {/* Previous Button */}
-     <button
-       onClick={prevSlide}
-       className="absolute left-2 sm:left-4 top-[55%] sm:top-1/2 -translate-y-1/2 p-3 sm:p-4 bg-white rounded-full shadow hover:bg-gray-100 rotate-180"
-     >
-       <FaArrowRight />
-     </button>
+        <button
+          onClick={prevSlide}
+          className="absolute left-2 sm:left-4 top-[55%] sm:top-1/2 -translate-y-1/2 p-3 sm:p-4 bg-white rounded-full shadow hover:bg-gray-100 rotate-180"
+        >
+          <FaArrowRight />
+        </button>
 
 
-       <button
-         onClick={nextSlide}
-         className="absolute right-2 sm:right-4 top-[55%] sm:top-1/2 -translate-y-1/2 p-3 sm:p-4 bg-white rounded-full shadow hover:bg-gray-100"
-       >
-         <FaArrowRight />
-       </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-2 sm:right-4 top-[55%] sm:top-1/2 -translate-y-1/2 p-3 sm:p-4 bg-white rounded-full shadow hover:bg-gray-100"
+        >
+          <FaArrowRight />
+        </button>
       </div>
 
       {/* Text + Bottle Section */}
@@ -335,22 +335,22 @@ const Home = () => {
             <span className="font-medium"><span className="text-4xl sm:text-5xl font-semibold text-gray-800">30 Years of Sunny’s</span>  Now in a Bottle</span>
             <br />
           </h1>
-<h1 className="text-base  text-gray-900 leading-tight">
+          <h1 className="text-base  text-gray-900 leading-tight">
             <span className="">From Bangalore’s legendary restaurant to your kitchen table.</span>
 
-</h1>
+          </h1>
           <p className="text-gray-700 text-sm sm:text-base">
             Chef-crafted sauces, dressings & marinades — vegan, gluten free, preservative-free, and
-             ready to make every dish unforgettable.
+            ready to make every dish unforgettable.
           </p>
 
           {/* {showMore && ( */}
-            <div className="text-gray-700 space-y-3 text-sm sm:text-base">
-              <p>Sunny’s has been a Bangalore icon for over 30 years! A place where flavour, passion, and perfection come together on every plate. Now, that same legacy lives on in Sunny’s in a Bottle.</p>
-              <p>From smoky BBQ to zesty vinaigrettes, each bottle carries chef Arjun Sajnani’s tried and tested recipes — crafted with real ingredients, no preservatives, and plenty of heart. Think of it as restaurant-style flavour, bottled for everyday indulgence.</p>
-              {/* <p className="font-semibold">What makes us different?</p> */}
-              {/* <p>Our range is made with superior oils and fresh authentic ingredients.</p> */}
-            </div>
+          <div className="text-gray-700 space-y-3 text-sm sm:text-base">
+            <p>Sunny’s has been a Bangalore icon for over 30 years! A place where flavour, passion, and perfection come together on every plate. Now, that same legacy lives on in Sunny’s in a Bottle.</p>
+            <p>From smoky BBQ to zesty vinaigrettes, each bottle carries chef Arjun Sajnani’s tried and tested recipes — crafted with real ingredients, no preservatives, and plenty of heart. Think of it as restaurant-style flavour, bottled for everyday indulgence.</p>
+            {/* <p className="font-semibold">What makes us different?</p> */}
+            {/* <p>Our range is made with superior oils and fresh authentic ingredients.</p> */}
+          </div>
         </div>
 
         {/* Right: Bottle Section */}
@@ -375,7 +375,7 @@ const Home = () => {
         </h2>
         <p className="text-gray-600 mx-auto mt-3 px-4 text-sm sm:text-base text-center max-w-3xl">
           At Sunny’s in a Bottle, flavour is never faked. Every sauce, dressing, and marinade is crafted with honesty - using only premium, all natural ingredients.
-         That means you get the richness of chef-tested recipes, without the junk.
+          That means you get the richness of chef-tested recipes, without the junk.
         </p>
       </div>
 
@@ -403,7 +403,7 @@ const Home = () => {
               </p>
             </div>
           );
-          
+
         })}
       </div>
       {/* About Sunny's Section - Inside Beige Background */}
@@ -434,7 +434,7 @@ const Home = () => {
 
           <p>
             Whether you’re plating up a dinner date, feeding the fam, or elevating your late-night snack,
-           Sunny’s in a Bottle gives you the shortcut to delicious 
+            Sunny’s in a Bottle gives you the shortcut to delicious
             without compromising on quality or style.
           </p>
 
@@ -444,7 +444,7 @@ const Home = () => {
         </div>
       </div>
 
-            {/* Serving Suggestions Section */}
+      {/* Serving Suggestions Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-2 pb-24">
         <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">
           Serving Suggestions
@@ -466,19 +466,19 @@ const Home = () => {
 
         {/* Bullet List */}
         <ul className="text-gray-700 text-sm sm:text-base mt-6 space-y-2 max-w-2xl mx-auto">
-  <li>
-    <span className="text-black">•</span>&nbsp;&nbsp;
-    <span className="font-medium">Dinner Upgrades</span> → Turn pastas, pizzas, and grilled veggies into gourmet moments.
-  </li>
-  <li>
-    <span className="text-black">•</span>&nbsp;&nbsp;
-    <span className="font-medium">Quick Fixes</span> → Upgrade your snacks and salads in seconds.
-  </li>
-  <li>
-    <span className="text-black">•</span>&nbsp;&nbsp;
-    <span className="font-medium">Party Tricks</span> → Marinades, dips, and drizzles that guarantee applause.
-  </li>
-</ul>
+          <li>
+            <span className="text-black">•</span>&nbsp;&nbsp;
+            <span className="font-medium">Dinner Upgrades</span> → Turn pastas, pizzas, and grilled veggies into gourmet moments.
+          </li>
+          <li>
+            <span className="text-black">•</span>&nbsp;&nbsp;
+            <span className="font-medium">Quick Fixes</span> → Upgrade your snacks and salads in seconds.
+          </li>
+          <li>
+            <span className="text-black">•</span>&nbsp;&nbsp;
+            <span className="font-medium">Party Tricks</span> → Marinades, dips, and drizzles that guarantee applause.
+          </li>
+        </ul>
 
 
         <p className="text-center text-gray-800 font-medium italic text-lg mt-10">

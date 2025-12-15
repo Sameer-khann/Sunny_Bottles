@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 
+import { Toaster } from "react-hot-toast";
+
 function App() {
   const location = useLocation();
 
@@ -17,6 +19,8 @@ function App() {
   return (
     <>
       {!hideNavbarFooter && <Navbar />}
+
+      <Toaster position="top-right" />
 
       <Routes>
         <Route path="/" element={<Home />} />

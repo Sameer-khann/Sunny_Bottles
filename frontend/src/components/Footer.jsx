@@ -59,22 +59,23 @@ const Footer = () => {
           </h2>
 
           <p className="text-[#525252] text-[15px] leading-[22px] mb-3">
-  20, Paul’s Castle, Castle Street, Ashok Nagar <br />
-  Bangalore, Karnataka <br />
-  560025
-</p>
+            20, Paul’s Castle, Castle Street, Ashok Nagar <br />
+            Bangalore, Karnataka <br />
+            560025
+          </p>
 
 
           {/* Email */}
-   <div className="grid grid-cols-[auto_1fr] gap-2 mb-2">
-  {/* <MdEmail className="text-[#2F820C] mt-1" /> */}
-  <a
-    href="mailto:sunnysandmore@yahoo.com"
-    className="text-[#525252] text-sm sm:text-base break-words"
-  >
-    sunnysandmore@yahoo.com
-  </a>
-</div>
+
+          <div className="grid grid-cols-[auto_minmax(0,1fr)] gap-2 mb-2">
+            {/* <MdEmail className="text-[#2F820C] mt-1 shrink-0" /> */}
+            <a
+              href="mailto:sunnysandmore@yahoo.com"
+              className="text-[#525252] text-sm sm:text-base break-all min-w-0"
+            >
+              sunnysandmore@yahoo.com
+            </a>
+          </div>
 
           {/* Phone */}
           <div className="flex items-center gap-2">

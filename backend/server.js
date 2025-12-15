@@ -67,36 +67,6 @@ app.post("/send-email", upload.single("file"), async (req, res) => {
   `,
     };
 
-
-    // const mailOptions = {
-    //   from: email || process.env.EMAIL_USER,
-    //   to: process.env.EMAIL_RECEIVER,
-    //   subject: `Sunnys's Bottles - Contact form from ${firstName} ${lastName}`,
-    //   text: `
-    //     First Name: ${firstName}
-    //     Last Name: ${lastName}
-    //     Email: ${email}
-    //     Postal Code: ${postalCode}
-    //     Message: ${message}
-    //   `,
-    //   html: `
-    //     <h2>Customer Message - Sunny's Bottles</h2>
-    //     <p><strong>First Name:</strong> ${firstName}</p>
-    //     <p><strong>Last Name:</strong> ${lastName}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Postal Code:</strong> ${postalCode}</p>
-    //     <p><strong>Message:</strong><br/>${message}</p>
-    //   `,
-    //   attachments: file
-    //     ? [
-    //         {
-    //           filename: file.originalname,
-    //           path: file.path,
-    //         },
-    //       ]
-    //     : [],
-    // };
-
     await transporter.sendMail(mailOptions);
 
     // Delete uploaded file after sending
